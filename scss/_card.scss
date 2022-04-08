@@ -1,0 +1,62 @@
+.wrapper {
+	display: flex;
+	height: 100%;
+	width: 100%;
+
+	section {
+		background: url(/images/bg-pattern-desktop.svg) no-repeat,
+			linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+		background-size: cover;
+		padding: 5% 10%;
+		display: flex;
+		// justify-content: space-between;
+		// @include Flex(flex-start\,center);
+		flex-direction: column;
+		.mobile {
+			display: none;
+		}
+		img {
+			display: flex;
+			margin-bottom: auto;
+		}
+		h1 {
+			letter-spacing: 0.15em;
+			display: flex;
+			font-weight: 600;
+			font-size: 5.5vw;
+			flex-direction: column;
+			text-transform: uppercase;
+			margin-bottom: 5%;
+			color: $darkGrayishRed;
+			span {
+				color: $desaturatedRed;
+				font-weight: 300;
+			}
+		}
+		article {
+			display: flex;
+			flex-direction: column;
+			margin-top: auto;
+			margin-bottom: 10%;
+		}
+		p {
+			color: $desaturatedRed;
+			font-size: 1.15vw;
+			line-height: 1.7em;
+		}
+
+		#feedback {
+			padding-left: 3%;
+			color: red;
+			display: flex;
+			margin-top: 4%;
+			margin-bottom: auto;
+		}
+	}
+
+	.image {
+		display: flex;
+		margin-left: auto;
+		height: 100%;
+	}
+}

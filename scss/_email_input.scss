@@ -1,0 +1,48 @@
+.contact {
+	display: flex;
+	position: relative;
+	#email {
+		border-radius: 40px;
+		border: 1px solid $desaturatedRed;
+		background-color: transparent;
+		color: $desaturatedRed;
+		padding: 1.9vh;
+		width: 100%;
+	}
+	::placeholder {
+		opacity: 1;
+		color: $desaturatedRed;
+	}
+	.arrow {
+		background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+		border-radius: 40px;
+		box-shadow: 0 4px 15px $desaturatedRed;
+		line-height: 5vh;
+		padding: 1.9vh 3vw;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translate(50%, -50%);
+		transition: ease-in 0.25s;
+	}
+	.arrow:hover {
+		box-shadow: 0 6px 20px $desaturatedRed;
+		background: linear-gradient(rgb(248, 191, 191));
+		// filter: brightness(120%);
+		cursor: pointer;
+	}
+	#error {
+		display: none;
+		position: absolute;
+		right: 5vw;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+}
+#feedback {
+	padding-left: 3%;
+	color: red;
+	display: flex;
+	margin-top: 4%;
+	margin-bottom: auto;
+}
