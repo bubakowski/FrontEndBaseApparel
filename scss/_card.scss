@@ -2,9 +2,8 @@
 	display: flex;
 	height: 100%;
 	width: 100%;
-
 	section {
-		background: url(images/bg-pattern-desktop.svg) no-repeat,
+		background: url(../images/bg-pattern-desktop.svg) no-repeat,
 			linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 		background-size: cover;
 		padding: 5% 10%;
